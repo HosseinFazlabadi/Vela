@@ -24,7 +24,13 @@ struct DesignIcon: View {
         "b610e.svg":"list.bullet", "c9326.svg":"network", "50e8b.svg":"music.note.list",
         "1b0f7.svg":"gearshape", "bfdda.svg":"plus"
     ]
-    var body:some View{Group{if file=="vela-mark.png",let url=Bundle.main.url(forResource:"vela-mark",withExtension:"png",subdirectory:"Assets"),let mark=NSImage(contentsOf:url){Image(nsImage:mark).resizable().scaledToFit().frame(width:24,height:24)}else{Image(systemName:Self.symbols[file] ?? "circle").font(.system(size:18,weight:.medium)).frame(width:24,height:24)}}.accessibilityHidden(true)}
+    private static func menuMark(_ url: URL) -> NSImage? {
+        guard let image = NSImage(contentsOf: url) else { return nil }
+        // AppKit menus use the image's intrinsic size rather than its SwiftUI frame.
+        image.size = NSSize(width: 24, height: 24)
+        return image
+    }
+    var body:some View{Group{if file=="vela-mark.png",let url=Bundle.main.url(forResource:"vela-mark",withExtension:"png",subdirectory:"Assets"),let mark=Self.menuMark(url){Image(nsImage:mark).resizable().scaledToFit().frame(width:24,height:24)}else{Image(systemName:Self.symbols[file] ?? "circle").font(.system(size:18,weight:.medium)).frame(width:24,height:24)}}.accessibilityHidden(true)}
 
 }
 
