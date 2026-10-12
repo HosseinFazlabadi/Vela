@@ -2,8 +2,8 @@
 <h1 align="center">Vela</h1>
 <p align="center">A native macOS media player powered by the VLC engine.</p>
 <p align="center">
-<a href="https://github.com/Hosseinfzl/Vela/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Hosseinfzl/Vela"></a>
-<a href="https://github.com/Hosseinfzl/Vela/actions/workflows/ci.yml"><img alt="Checks" src="https://github.com/Hosseinfzl/Vela/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://github.com/HosseinFazlabadi/Vela/releases"><img alt="Release" src="https://img.shields.io/github/v/release/HosseinFazlabadi/Vela"></a>
+<a href="https://github.com/HosseinFazlabadi/Vela/actions/workflows/ci.yml"><img alt="Checks" src="https://github.com/HosseinFazlabadi/Vela/actions/workflows/ci.yml/badge.svg"></a>
 <img alt="Platform" src="https://img.shields.io/badge/macOS-26%2B-black">
 <img alt="Architecture" src="https://img.shields.io/badge/architecture-Apple%20Silicon-orange">
 <a href="LICENSE.txt"><img alt="License" src="https://img.shields.io/badge/license-GPL--2.0--or--later-blue"></a>
@@ -13,7 +13,7 @@ Vela brings file and network playback, an independent media library, capture, co
 
 ## Download and install
 
-1. Download **Vela-1.1-macOS.zip** from the [latest release](https://github.com/Hosseinfzl/Vela/releases/latest).
+1. Download **Vela-1.1-macOS.zip** from the [latest release](https://github.com/HosseinFazlabadi/Vela/releases/latest).
 2. Expand the archive and drag **Vela.app** to **Applications**.
 3. Open Vela and select a file, drag media into the window, or use **File → Open Network Stream**.
 
@@ -40,7 +40,7 @@ See the [user guide](docs/USER-GUIDE.md) for controls and workflows, and the [ex
 You need Xcode, Python 3, FFmpeg, and the official **VLC 3.0.24 Apple Silicon** app. The extension bridge uses a pinned private ABI; a different VLC version will be rejected.
 
 ```sh
-git clone https://github.com/Hosseinfzl/Vela.git
+git clone https://github.com/HosseinFazlabadi/Vela.git
 cd Vela
 ./build.sh
 open dist/Vela.app
@@ -63,7 +63,7 @@ This release is not a claim of complete parity with every VLC interface feature 
 
 ## Contributing and future releases
 
-Report reproducible problems through [Issues](https://github.com/Hosseinfzl/Vela/issues), discuss ideas in [Discussions](https://github.com/Hosseinfzl/Vela/discussions), or submit a pull request. The [roadmap](docs/ROADMAP.md) and [release guide](docs/RELEASING.md) describe the next steps and the process for publishing new versions.
+Report reproducible problems through [Issues](https://github.com/HosseinFazlabadi/Vela/issues), discuss ideas in [Discussions](https://github.com/HosseinFazlabadi/Vela/discussions), or submit a pull request. The [roadmap](docs/ROADMAP.md) and [release guide](docs/RELEASING.md) describe the next steps and the process for publishing new versions.
 
 ## License and acknowledgements
 
