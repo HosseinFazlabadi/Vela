@@ -10,3 +10,5 @@
 8. Verify the published tag, source and uploaded checksums. Test the download instructions.
 
 The initial public release is v1.1. Use new version tags for subsequent releases; do not silently replace an existing public binary or move its tag. Keep historical sources and checksums available.
+
+Update the README download link and `docs/images/download.svg` to the new version when publishing a release. The source-check badge remains automatic.

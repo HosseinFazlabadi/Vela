@@ -2,7 +2,7 @@
 <h1 align="center">Vela</h1>
 <p align="center">A native macOS media player powered by the VLC engine.</p>
 <p align="center">
-<a href="https://github.com/HosseinFazlabadi/Vela/releases"><img alt="Release" src="https://img.shields.io/github/v/release/HosseinFazlabadi/Vela"></a>
+<a href="https://github.com/HosseinFazlabadi/Vela/releases/tag/v1.1"><img alt="Download Vela 1.1" src="docs/images/download.svg"></a>
 <a href="https://github.com/HosseinFazlabadi/Vela/actions/workflows/ci.yml"><img alt="Checks" src="https://github.com/HosseinFazlabadi/Vela/actions/workflows/ci.yml/badge.svg"></a>
 <img alt="Platform" src="https://img.shields.io/badge/macOS-26%2B-black">
 <img alt="Architecture" src="https://img.shields.io/badge/architecture-Apple%20Silicon-orange">
