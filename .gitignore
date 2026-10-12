@@ -1,0 +1,10 @@
+.build/
+dist/
+.DS_Store
+__pycache__/
+*.py[cod]
+*.dSYM/
+.env
+.env.*
+*.p12
+*.p8

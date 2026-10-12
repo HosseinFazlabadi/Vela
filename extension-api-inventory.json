@@ -1,0 +1,325 @@
+{
+  "scope": "All macOS extension API families registered by GetLuaState in VLC 3.0.24; additional userdata methods listed separately. This inventory is function coverage, not certification of every extension or every parameter combination.",
+  "engine": "3.0.24",
+  "lua": "5.1.5 with official VLC bytecode, vararg and dynamic-module patches",
+  "surfaces": {
+    "config": {
+      "functions": [
+        "get",
+        "set",
+        "datadir",
+        "userdatadir",
+        "homedir",
+        "configdir",
+        "cachedir",
+        "datadir_list"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/configuration.c",
+      "upstream_table": "vlclua_config_reg"
+    },
+    "input": {
+      "functions": [
+        "is_playing",
+        "item",
+        "add_subtitle",
+        "add_subtitle_mrl"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/input.c",
+      "upstream_table": "vlclua_input_reg"
+    },
+    "input_item": {
+      "functions": [
+        "is_preparsed",
+        "metas",
+        "set_meta",
+        "uri",
+        "name",
+        "duration",
+        "stats",
+        "info"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/input.c",
+      "upstream_table": "vlclua_input_item_reg"
+    },
+    "object": {
+      "functions": [
+        "input",
+        "playlist",
+        "libvlc",
+        "find",
+        "vout",
+        "aout"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/objects.c",
+      "upstream_table": "vlclua_object_reg"
+    },
+    "strings": {
+      "functions": [
+        "decode_uri",
+        "encode_uri_component",
+        "make_uri",
+        "make_path",
+        "url_parse",
+        "resolve_xml_special_chars",
+        "convert_xml_special_chars",
+        "from_charset"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/strings.c",
+      "upstream_table": "vlclua_strings_reg"
+    },
+    "var": {
+      "functions": [
+        "inherit",
+        "get",
+        "get_list",
+        "set",
+        "create",
+        "trigger_callback",
+        "libvlc_command",
+        "inc_integer",
+        "dec_integer",
+        "count_choices",
+        "toggle_bool"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/variables.c",
+      "upstream_table": "vlclua_var_reg"
+    },
+    "net": {
+      "functions": [
+        "listen_tcp",
+        "connect_tcp",
+        "close",
+        "send",
+        "recv",
+        "poll",
+        "read",
+        "write",
+        "url_parse",
+        "stat",
+        "opendir"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/net.c",
+      "upstream_table": "vlclua_net_intf_reg"
+    },
+    "net_listener": {
+      "functions": [
+        "accept",
+        "fds"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/net.c",
+      "upstream_table": "vlclua_net_listen_reg"
+    },
+    "stream": {
+      "functions": [
+        "read",
+        "readline",
+        "addfilter",
+        "readdir",
+        "getsize",
+        "seek"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/stream.c",
+      "upstream_table": "vlclua_stream_reg"
+    },
+    "xml": {
+      "functions": [
+        "create_reader"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/xml.c",
+      "upstream_table": "vlclua_xml_reg"
+    },
+    "xml_reader": {
+      "functions": [
+        "next_node",
+        "next_attr",
+        "node_empty"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/xml.c",
+      "upstream_table": "vlclua_xml_reader_reg"
+    },
+    "io": {
+      "functions": [
+        "mkdir",
+        "open",
+        "readdir",
+        "unlink"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/io.c",
+      "upstream_table": "vlclua_io_reg"
+    },
+    "io_file": {
+      "functions": [
+        "read",
+        "write",
+        "seek",
+        "flush",
+        "close"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/io.c",
+      "upstream_table": "vlclua_io_file_reg"
+    },
+    "vlm": {
+      "functions": [
+        "execute_command"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/vlm.c",
+      "upstream_table": "vlclua_vlm_reg"
+    },
+    "volume": {
+      "functions": [
+        "get",
+        "set",
+        "up",
+        "down"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/volume.c",
+      "upstream_table": "vlclua_volume_reg"
+    },
+    "video": {
+      "functions": [
+        "fullscreen"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/video.c",
+      "upstream_table": "vlclua_video_reg"
+    },
+    "osd": {
+      "functions": [
+        "icon",
+        "message",
+        "slider",
+        "channel_register",
+        "channel_clear"
+      ],
+      "implementation": "official VLC Lua bindings",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/osd.c",
+      "upstream_table": "vlclua_osd_reg"
+    },
+    "playlist": {
+      "functions": [
+        "prev",
+        "next",
+        "skip",
+        "play",
+        "pause",
+        "stop",
+        "clear",
+        "repeat",
+        "repeat_",
+        "loop",
+        "random",
+        "goto",
+        "gotoitem",
+        "add",
+        "enqueue",
+        "get",
+        "search",
+        "current",
+        "sort",
+        "status",
+        "delete",
+        "move"
+      ],
+      "implementation": "Vela frontend + libVLC",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/playlist.c",
+      "upstream_table": "vlclua_playlist_reg"
+    },
+    "sd": {
+      "functions": [
+        "get_services_names",
+        "add",
+        "remove",
+        "is_loaded"
+      ],
+      "implementation": "VLC SDK discovery + Vela tree adapter",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/sd.c",
+      "upstream_table": "vlclua_sd_intf_reg"
+    },
+    "dialog": {
+      "functions": [
+        "show",
+        "hide",
+        "delete",
+        "set_title",
+        "update",
+        "add_button",
+        "add_label",
+        "add_html",
+        "add_text_input",
+        "add_password",
+        "add_check_box",
+        "add_dropdown",
+        "add_list",
+        "add_image",
+        "add_spin_icon",
+        "del_widget"
+      ],
+      "implementation": "Vela native UI",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/dialog.c",
+      "upstream_table": "vlclua_dialog_reg"
+    },
+    "widget": {
+      "functions": [
+        "set_text",
+        "get_text",
+        "set_checked",
+        "get_checked",
+        "add_value",
+        "get_value",
+        "clear",
+        "get_selection",
+        "animate",
+        "stop"
+      ],
+      "implementation": "Vela native UI",
+      "upstream": "Vendor/vlc-3.0.24/modules/lua/libs/dialog.c",
+      "upstream_table": "vlclua_widget_reg"
+    },
+    "msg": {
+      "functions": [
+        "dbg",
+        "info",
+        "warn",
+        "err"
+      ],
+      "implementation": "Vela native log"
+    }
+  },
+  "upstream_function_count": 144,
+  "root_functions": [
+    "dialog",
+    "gettext",
+    "deactivate",
+    "keep_alive",
+    "stream",
+    "memory_stream",
+    "xml",
+    "vlm"
+  ],
+  "extra_family": {
+    "misc": [
+      "mdate",
+      "mwait",
+      "quit"
+    ]
+  },
+  "platform_exclusions": [
+    "Windows-only win APIs",
+    "HTTP interface / service-discovery-script libraries not registered in extension context"
+  ]
+}

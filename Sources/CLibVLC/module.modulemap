@@ -1,0 +1,8 @@
+module CLibVLC [system] {
+  header "include/vlc/vlc.h"
+  header "include/RendererBridge.h"
+  header "include/CaptureBridge.h"
+  header "include/ExtensionBridge.h"
+  link "vlc"
+  export *
+}

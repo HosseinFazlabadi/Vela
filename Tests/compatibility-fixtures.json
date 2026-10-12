@@ -1,0 +1,16 @@
+[
+  {
+    "repository": "Anndrey24/VLC_Speed_Controller",
+    "commit": "c1d16c18be49872b690ceaed6518e7c272266ef8",
+    "file": "vlc_speed_controller.lua",
+    "url": "https://raw.githubusercontent.com/Anndrey24/VLC_Speed_Controller/c1d16c18be49872b690ceaed6518e7c272266ef8/vlc_speed_controller.lua",
+    "sha256": "4cb8032b9b7234f1f3ecb3024891124212708dcc39fc8c9adb5a3a8ac1711fc7"
+  },
+  {
+    "repository": "hemachandsai/vlc-playlist-tracker",
+    "commit": "03bd7304739db1d270f3b042ea10d1b416c468f6",
+    "file": "vlc_playlist_tracker.lua",
+    "url": "https://raw.githubusercontent.com/hemachandsai/vlc-playlist-tracker/03bd7304739db1d270f3b042ea10d1b416c468f6/vlc_playlist_tracker.lua",
+    "sha256": "b20c56752207f748e78004ba81e73a908f47221de7600ca072f6bafab56eea53"
+  }
+]

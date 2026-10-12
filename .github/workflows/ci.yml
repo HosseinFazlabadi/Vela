@@ -1,0 +1,25 @@
+name: Source checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Repository and license checks
+        run: python3 scripts/check-repository.py
+      - name: Shell syntax
+        run: bash -n build.sh Tests/run.sh
+      - name: Swift syntax
+        run: xcrun swiftc -frontend -parse Sources/Vela/*.swift
+      - name: Pinned extension API inventory
+        run: |
+          python3 Tests/make-api-inventory.py
+          git diff --exit-code -- extension-api-inventory.json Tests/api-function-names.lua

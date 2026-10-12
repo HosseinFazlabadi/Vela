@@ -1,0 +1,1 @@
+Vela project source and original logo are offered under GNU GPL version 2 or, at your option, any later version. Third-party components retain their original notices and licenses. See LICENSE.txt and THIRD-PARTY-NOTICES.md.

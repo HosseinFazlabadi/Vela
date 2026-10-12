@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>Vela</string>
+<key>CFBundleIdentifier</key><string>local.vela.player</string>
+<key>CFBundleName</key><string>Vela</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>CFBundleDisplayName</key><string>Vela</string>
+<key>CFBundleShortVersionString</key><string>1.1</string>
+<key>CFBundleVersion</key><string>4</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>LSMinimumSystemVersion</key><string>26.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSCameraUsageDescription</key><string>Use your selected camera as a live capture source when you choose Open Capture.</string>
+<key>NSMicrophoneUsageDescription</key><string>Use your selected microphone as a live capture source when you choose Open Capture.</string>
+<key>NSPrincipalClass</key><string>NSApplication</string>
+<key>NSLocalNetworkUsageDescription</key><string>Find VLC-compatible casting devices when you choose Scan for Devices.</string>
+<key>NSBonjourServices</key><array><string>_googlecast._tcp</string></array>
+<key>CFBundleDocumentTypes</key><array><dict>
+<key>CFBundleTypeName</key><string>Media</string>
+<key>CFBundleTypeRole</key><string>Viewer</string>
+<key>LSHandlerRank</key><string>Alternate</string>
+<key>LSItemContentTypes</key><array><string>public.movie</string><string>public.audio</string><string>public.m3u-playlist</string></array>
+</dict></array>
+</dict></plist>
