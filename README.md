@@ -11,6 +11,8 @@
 
 Vela brings file and network playback, an independent media library, capture, conversion, streaming, and Lua extensions into a native SwiftUI and AppKit interface. It bundles libVLC, so you do not need to install or open VLC to use a release build.
 
+![Vela on macOS](docs/images/vela.png)
+
 ## Download and install
 
 1. Download **Vela-1.1-macOS.zip** from the [latest release](https://github.com/HosseinFazlabadi/Vela/releases/latest).
